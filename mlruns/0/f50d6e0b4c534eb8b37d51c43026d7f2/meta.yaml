@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/FSOFT_QAI/mlflow-demo/mlruns/0/f50d6e0b4c534eb8b37d51c43026d7f2/artifacts
+end_time: 1644420505314
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: f50d6e0b4c534eb8b37d51c43026d7f2
+run_uuid: f50d6e0b4c534eb8b37d51c43026d7f2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1644420502330
+status: 3
+tags: []
+user_id: lengo
