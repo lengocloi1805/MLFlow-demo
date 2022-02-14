@@ -1,0 +1,77 @@
+{
+    "data": "necessary 11 tags",
+    "models":{
+        "xlmr_linear": {
+            "pre_train": "xlm-roberta-base",
+            "params": {
+                "linear_dropout": 0.3,
+                "bert_att_dropout": 0.15,
+                "bert_hidd_dropout": 0.2,
+                "lr_bert": 1e-5,
+                "l2_bert": 1e-5,
+                "lr_linear": 1e-3,
+                "l2_linear": 1e-3
+            },
+            "metrics": {
+                "f2_span_train": 97.47,
+                "f2_span_dev": 91.03,
+                "f2_span_test": 86.66 
+            }
+        },
+        "xlmr_crf": {
+            "pre_train": "xlm-roberta-base",
+            "params": {
+                "linear_dropout": 0.35,
+                "bert_att_dropout": 0.3,
+                "bert_hidd_dropout": 0.2,
+                "lr_bert": 3e-5,
+                "l2_bert": 1e-5,
+                "lr_linear": 7e-4,
+                "l2_linear": 1e-3,
+                "lr_crf": 7e-4,
+                "l2_crf": 1e-3
+            },
+            "metrics": {
+                "f2_span_train": 96.62,
+                "f2_span_dev": 91.26,
+                "f2_span_test": 86.03 
+            }
+        },
+        "mluke_linear": {
+            "pre_train": "studio-ousia/mluke-base",
+            "params": {
+                "linear_dropout": 0.3,
+                "bert_att_dropout": 0.15,
+                "bert_hidd_dropout": 0.2,
+                "lr_bert": 3e-5,
+                "l2_bert": 1e-5,
+                "lr_linear": 1e-3,
+                "l2_linear": 1e-3
+            },
+            "metrics": {
+                "f2_span_train": 97.47,
+                "f2_span_dev": 91.03,
+                "f2_span_test": 86.66 
+            }
+        },
+        "mluke_crf": {
+            "pre_train": "studio-ousia/mluke-base",
+            "params": {
+                "linear_dropout": 0.35,
+                "bert_att_dropout": 0.3,
+                "bert_hidd_dropout": 0.2,
+                "lr_bert": 1e-5,
+                "l2_bert": 1e-5,
+                "lr_linear": 7e-4,
+                "l2_linear": 1e-3,
+                "lr_crf": 7e-4,
+                "l2_crf": 1e-3
+            },
+            "metrics": {
+                "f2_span_train": 95.39,
+                "f2_span_dev": 91.07,
+                "f2_span_test": 87.82 
+            }
+        }
+    }
+}
